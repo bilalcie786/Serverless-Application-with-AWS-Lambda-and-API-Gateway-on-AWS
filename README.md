@@ -1,6 +1,6 @@
 # Serverless-Application-with-AWS-Lambda-and-API-Gateway-on-AWS
 
-Overview
+# Overview
 Serverless computing is a Cloud Computing model in which a cloud provider such as AWS automatically manages the provisioning and allocation of compute resources. In Contrast with traditional cloud computing where the user is responsible for directly managing the underlying infrastructure.
 
 In AWS, one can deploy a "serverless" Application Architecture using AWS API Gateway that exposes these Services via an API that can be consumed publicly. In this post, we will cover this architecture as:
@@ -18,7 +18,7 @@ In the following section we will manually emulate an automatic build process usi
 
 Warning: Following this tutorial will create objects in your AWS account that will cost you money against your AWS bill.
 
-Building the Lambda Function Package
+# Building the Lambda Function Package
 AWS Lambda expects a function's implementation to be provided as an archive containing the function source code and any other static files needed to execute the function.
 
 Terraform is not a build tool, so the zip file must be prepared using a separate build process prior to deploying it with Terraform. For a real application we recommend automating your build via a CI system, whose job is to run any necessary build actions (library installation, compilation, etc), produce the deployment zip file as a build artifact, and then upload that artifact into an Amazon S3 bucket from which it will be read for deployment.
